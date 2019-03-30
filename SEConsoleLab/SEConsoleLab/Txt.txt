@@ -1,0 +1,36 @@
+﻿IMyTextPanel LCD;
+List<IMyProgrammableBlock> L_Prog = new List<IMyProgrammableBlock>();
+string EchoString = "";
+int CntInt = 0;
+
+int Main(string Args)
+{
+	EchoString += ("Fuck you Keen\n");
+	LCD = GridTerminalSystem.GetBlockWithName("LCD") as IMyTextPanel;
+
+	IMyBlockGroup BG1 = GridTerminalSystem.GetBlockGroupWithName("GP");
+	if (BG1 == null)
+	{
+		EchoString += ("NULLLL!!! 56\n");
+		Echo(EchoString);
+		return 0;
+	}
+
+	BG1.GetBlocksOfType(L_Prog);
+
+	while(true)
+	{
+		if(Runtime.)
+	}
+
+
+	EchoString += (L_Prog[0].CustomData + "\n");
+	
+	EchoString += (L_Prog[1].CustomData + "\n");
+	EchoString += ("?");
+
+
+	Echo(EchoString);
+	return 0;
+
+}
